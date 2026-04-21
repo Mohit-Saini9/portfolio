@@ -1,27 +1,49 @@
 import React from "react";
 
 const About = () => {
+  // const projects = [
+  //   {
+  //     title: "Portfolio Website",
+  //     desc: "Personal portfolio built using React.js and Tailwind CSS.",
+  //   },
+  //   {
+  //     title: "E-commerce Application",
+  //     desc: "Full-stack MERN application with cart and authentication.",
+  //   },
+  //   {
+  //     title: "Learning Management System",
+  //     desc: "Developed responsive LMS UI using React.js.",
+  //   },
+  //   {
+  //     title: "GitHub Profile Fetcher",
+  //     desc: "Fetches GitHub user data using API integration.",
+  //   },
+  //   {
+  //     title: "Student Management System",
+  //     desc: "CRUD app to manage student records using React.js.",
+  //   },
+  // ];
   return (
-    <div name="about" className="w-full max-h-screen  ">
-      <div className="justify-center items-center px-2 ">
-        <p className="text-4xl sm:7xl font-bold underline text-black ">About</p>
-      </div>
-      <div className="max-w-screen-lg h-auto justify-center text-xl flex flex-col px-4 md:flex-row">
-        <p className=" py-2 mx-w-md gap-5  ">
-          I am a passionate React.js developer with experience in building
-          dynamic, responsive, and high-performance web applications. My
-          expertise lies in developing clean and maintainable code, utilizing
-          modern front-end technologies, and creating seamless user experiences.
-          <br />
-          <br />
-          <p>Portfolio website, E-commerce Application</p>
-        </p>
-        {/* <p className=" py-4 my-w-md text-2xl md:ml-20 sm:text-2xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ea
-          animi optio dolores exercitationem autem praesentium odit laudantium
-          nihil veniam, reprehenderit deleniti! Amet qui itaque, perferendis
-          commodi aperiam doloribus dolorem.
-        </p> */}
+    <div name="about" className="w-full ">
+      <div className="max-w-6xl mx-auto px-4 py-10">
+        <h2 className="text-4xl sm:text-4xl font-semibold text-black border-b-4 border-black inline-block">
+          About Me
+        </h2>
+        <div className="mt-8 flex flex-col md:flex-row text-gray-600 text-lg">
+          <div className="">
+            <p className="leading-relaxed">
+              I am a React.js developer with hands-on experience in building
+              responsive and user-friendly web applications. I have completed
+              internships at PSK Technology Pvt. Ltd. and Cepia Labs, where I
+              worked on frontend and full-stack projects using the MERN stack.
+            </p>
+            <p className="mt-2 leading-relaxed">
+              I focus on creating clean UI, improving user experience, and
+              developing scalable applications using modern technologies like
+              React, Tailwind CSS, and Node.js.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

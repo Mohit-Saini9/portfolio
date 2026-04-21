@@ -1,70 +1,61 @@
 import React from "react";
 import Mohit from "../Assets/MOHIT.jpg";
 import { Link } from "react-scroll";
+import ResumesUpdated from "../Assets/mp.pdf";
 
 const Home = () => {
   return (
-    <div name="home" className=" w-full  text-black ">
-      {/* max-h-screen   md:max-h-screen sm:min-h-screen lg:h-screen md:h-screen */}
-      <div
-        className="max-w-screen-lg mx-auto flex flex-col items-center 
-      justify-between px-3  md:flex-row "
-      >
-        <div className="px-3 mx-auto">
-          <h2 className="text-4xl cursor-pointer md:text-7xl mt-20 text-gray-300  font-bold">
-            <Link to={"home"} smooth duration={400}>
-              Hi I am Mohit Saini
-            </Link>
+    <div
+      name="home"
+      className="w-full max-w-6xl text-black flex justify-center mx-auto "
+    >
+      <div className="  grid grid-cols-1 md:grid-cols-2 items-center justify-between px-3 mx-auto w-full">
+        <div className="px-3 mx-auto gap-10 ">
+          <h1 className="text-4xl md:text-6xl cursor-pointer md:mt-20 mt-10 font-bold">
+            Hi, I'm <span className="text-purple-800">Mohit Saini</span>
+          </h1>
+
+          <h2 className="font-medium text-xl mt-4">
+            Frontend Developer (React.js)
           </h2>
-          <p className="py-4 justify-between text-xl md:text-xl  items-center text-white max-w-md ">
-            Full Stack Developer (MERN Stack) With 6 months of hands-on
-            experience in the MERN (MongoDB, Express.js, React, Node.js) stack,
-            I am a passionate and dedicated developer eager to create efficient,
-            scalable, and user-friendly web applications. My expertise spans
-            across building dynamic front-end interfaces, developing robust
-            back-end services, and seamlessly integrating databases to deliver
+          <p className="py-4 text-base max-w-md">
+            React.js Developer with internship experience at PSK Technology and
+            Cepia Labs. I build responsive and user-friendly web applications
+            using the MERN stack.
           </p>
-          <div className=" flex  justify-items-center items-center max-md:hidden  ">
-            <button
-              className="bg-orange-400 rounded-lg  px-6 py-3 
-          hover:scale-110 duration-300 "
-            >
-              <a href={require("../Assets/mp.pdf")} download={"Resume.pdf"}>
-                DownloadCv
+          <div className="flex gap-6 mt-4 items-center max-md:hidden text-white">
+            <button className="bg-gradient-to-tl from-gray-800 to-purple-800 hover:to-purple-900 px-4 py-3 hover:scale-110 duration-300 rounded-lg">
+              <a href={ResumesUpdated} download="Resume.pdf">
+                Download CV
               </a>
             </button>
-            <button
-              className="bg-orange-400 rounded-lg px-6 py-3 ml-20
-          hover:scale-110 duration-30 "
-            >
-              <Link to={"contact"} smooth duration={400}>
-                Conatact
+
+            <button className="bg-gradient-to-tl from-gray-800 to-purple-800 hover:to-purple-900 px-8 py-3  hover:scale-110 duration-300 rounded-lg">
+              <Link to="contact" smooth duration={400}>
+                Contact
               </Link>
             </button>
           </div>
         </div>
-        <div className="">
+
+        <div className="mx-auto flex items-center justify-center">
           <img
             src={Mohit}
             alt="img"
-            className=" rounded-xl  w-40  ml-10 md:mt-20 md:h-[90%]w-[80%]  "
+            className="rounded-xl w-44 md:w-64 ml-10 md:mt-20 md:h-[10%] shadow-lg object-cover hover:scale-105 transition duration-300 "
           />
         </div>
-        <div className="flex justify-between p-2 text-l font-medium mt-0 md:hidden">
-          <button
-            className="bg-orange-400 rounded-lg  px-6 py-3 
-          hover:scale-110 duration-300  "
-          >
-            <a href={require("../Assets/mp.pdf")} download={"Resume.pdf"}>
-              DownloadCv
+
+        <div className=" w-full  p-2 text-lg font-medium md:hidden mt-4 text-white">
+          <button className="bg-gradient-to-tl from-gray-800 to-purple-800 hover:to-purple-900 rounded-lg px-4 py-3 hover:scale-110 duration-300 w-full ">
+            <a href={ResumesUpdated} download>
+              Download CV
             </a>
           </button>
-          <button
-            className="bg-orange-400 rounded-lg px-6 py-3
-           hover:scale-110 duration-300 ml-20"
-          >
-            <Link to={"contact"} smooth duration={400}>
-              Conatact
+
+          <button className="bg-gradient-to-tl from-gray-800 to-purple-800 hover:to-purple-900 rounded-lg px-8 py-3 hover:scale-110 duration-300 w-full mt-4">
+            <Link to="contact" smooth duration={400}>
+              Contact
             </Link>
           </button>
         </div>
