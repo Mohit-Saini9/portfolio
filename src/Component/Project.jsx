@@ -7,15 +7,15 @@ const Projects = () => {
       desc: "Personal portfolio built using React.js and Tailwind CSS.",
       tech: "React, Tailwind Css",
       github: "https://github.com/Mohit-Saini9/react-my-porfolio",
-      live: "",
+      live: "https://portfolio-teal-iota-85.vercel.app/",
     },
-    {
-      title: "E-commerce Application",
-      desc: "Full-stack MERN app with cart and authentication.",
-      tech: "MongoDB, Express, React, Node",
-      github: "https://github.com/your-username/ecommerce",
-      live: "https://ecommerce-demo.vercel.app",
-    },
+    // {
+    //   title: "E-commerce Application",
+    //   desc: "Full-stack MERN app with cart and authentication.",
+    //   tech: "MongoDB, Express, React, Node",
+    //   github: "https://github.com/your-username/ecommerce",
+    //   live: "https://ecommerce-demo.vercel.app",
+    // },
     {
       title: "Learning Management System",
       desc: "Responsive LMS UI built using React.js.",
@@ -41,11 +41,11 @@ const Projects = () => {
   return (
     <div name="projects" className="w-full min-h-screen py-10">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-semibold border-b-4 border-black inline-block">
+        <h2 className="text-4xl font-medium border-b-4 border-black inline-block">
           Projects
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 px-2">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8 px-2">
           {projects.map((item, index) => (
             <div
               key={index}
