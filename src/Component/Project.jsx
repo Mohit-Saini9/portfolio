@@ -38,7 +38,6 @@ const Projects = () => {
       live: "https://student-managment-bay.vercel.app/",
     },
   ];
-
   return (
     <div name="projects" className="w-full min-h-screen py-10">
       <div className="max-w-6xl mx-auto px-4">
@@ -73,7 +72,6 @@ const Projects = () => {
                   GitHub
                 </a>
 
-                {/* Live Button */}
                 <a
                   href={item.live}
                   target="_blank"
