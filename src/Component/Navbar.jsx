@@ -43,7 +43,7 @@ const Navbar = () => {
 
         {nav && (
           <ul
-            className="flex flex-col justify-center items-start absolute mt-4
+            className="flex flex-col justify-center items-start absolute mt-10
         left-0 w-[95%]  mx-2 bg-gradient-to-bl  from-gray-700 to-purple-900  rounded-xl py-2"
           >
             {links.map((item) => (

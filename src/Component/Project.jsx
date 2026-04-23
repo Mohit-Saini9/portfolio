@@ -64,7 +64,7 @@ const Projects = () => {
                   href={item.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-2 text-sm font-medium rounded-lg 
+                  className="w-full py-2.5 text-sm font-medium rounded-lg 
     bg-gradient-to-l from-gray-800 to-purple-700 text-white 
     shadow-md hover:shadow-xl hover:scale-105 
     transition duration-300"
@@ -76,7 +76,7 @@ const Projects = () => {
                   href={item.live}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-2 text-sm font-medium rounded-lg 
+                  className="w-full py-3 text-sm font-medium rounded-lg 
     bg-gradient-to-r from-purple-800 to-gray-600 text-white 
     shadow-md hover:shadow-xl hover:scale-105 
     transition duration-300"
