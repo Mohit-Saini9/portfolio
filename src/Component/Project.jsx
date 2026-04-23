@@ -39,7 +39,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div name="projects" className="w-full min-h-screen py-10">
+    <div name="projects" className="w-full py-10">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-4xl font-medium border-b-4 border-black inline-block">
           Projects
