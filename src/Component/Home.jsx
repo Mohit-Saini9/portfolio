@@ -42,7 +42,7 @@ const Home = () => {
           <img
             src={Mohit}
             alt="img"
-            className="rounded-xl w-44 md:w-64 ml-10 md:mt-20 md:h-[10%] shadow-lg object-cover hover:scale-105 transition duration-300 "
+            className="rounded-xl w-44 md:w-46 ml-10 md:mt-20 md:h-[10%] shadow-lg object-cover hover:scale-105 transition duration-300 "
           />
         </div>
 
