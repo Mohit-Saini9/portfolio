@@ -9,7 +9,7 @@ const Home = () => {
       name="home"
       className="w-full min-h-fit max-w-6xl text-black flex justify-center mx-auto py-10"
     >
-      <div className="  grid grid-cols-1 md:grid-cols-2 items-center justify-between px-3 mx-auto w-full">
+      <div className="  grid grid-cols-1 md:grid-cols-2 items-center px-3 mx-auto w-full">
         <div className="px-3 mx-auto gap-10 ">
           <h1 className="text-4xl md:text-6xl cursor-pointer md:mt-20 mt-10 font-bold">
             Hi, I'm <span className="text-purple-800">Mohit Saini</span>
@@ -23,7 +23,7 @@ const Home = () => {
             Cepia Labs. I build responsive and user-friendly web applications
             using the MERN stack.
           </p>
-          <div className="flex gap-6 mt-4 items-center max-md:hidden text-white">
+          <div className="md:flex flex-row hidden gap-6 mt-4 items-center   text-white">
             <button className="bg-gradient-to-tl from-gray-800 to-purple-800 hover:to-purple-900 px-4 py-3 hover:scale-110 duration-300 rounded-lg">
               <a href={ResumesUpdated} download="Resume.pdf">
                 Download CV
@@ -42,7 +42,7 @@ const Home = () => {
           <img
             src={Mohit}
             alt="img"
-            className="rounded-xl w-44 md:w-46 ml-10 md:mt-20 md:h-[10%] shadow-lg object-cover hover:scale-105 transition duration-300 "
+            className="rounded-xl w-44 md:w-56 ml-10 md:mt-20  shadow-lg object-cover "
           />
         </div>
 

@@ -3,12 +3,12 @@ import React from "react";
 const About = () => {
   return (
     <div name="about" className="w-full bg  ">
-      <div className="max-w-6xl mx-auto h- px-4 py-16 ">
-        <h2 className="text-4xl sm:text-4xl font-medium text-black  border-b-4 border-black inline-block">
+      <div className="max-w-6xl mx-auto  px-4 py-16 ">
+        <h2 className="text-3xl sm:text-4xl font-medium text-black  border-b-4 border-black inline-block">
           About Me
         </h2>
         <div className="mt-8 flex flex-col md:flex-row text-gray-600 text-lg">
-          <div className="">
+          <div className="max-w-3xl">
             <p className="leading-relaxed">
               I am a React.js developer with hands-on experience in building
               responsive and user-friendly web applications. I have completed

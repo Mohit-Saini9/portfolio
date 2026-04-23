@@ -19,7 +19,7 @@ const Contact = () => {
           <form
             action="https://getform.io/f/bjjmqvzb"
             method="POST"
-            className="flex flex-col  h-200 w-full md:w-1/2"
+            className="flex flex-col max-w-lg  w-full md:w-1/2"
           >
             <input
               type="text"
@@ -38,10 +38,10 @@ const Contact = () => {
               name="message"
               placeholder="Enter your message"
               rows={"10"}
-              className="bg- p-2 border-2  border-black  rounded-md focus:outline-none"
+              className=" p-2 border-2  border-black  rounded-md focus:outline-none"
             ></textarea>
             <button
-              className=" bg-gradient-to-tr from-gray-700 to-purple-800 hover:to-purple-900 mx-auto  px-8 py-3 my-8 flex-items-center 
+              className=" bg-gradient-to-tr from-gray-700 to-purple-800 hover:to-purple-900 mx-auto  px-8 py-3 my-8 flex items-center 
              rounded-md hover:scale-110 duration-300 text-white"
             >
               Let's talk
@@ -50,24 +50,24 @@ const Contact = () => {
         </div>
       </div>
       <div
-        className="inline-flex gap-14 text-xl font-medium items-center justify-center 
-        w-full h-20   bg-gradient-to-br from-gray-800 to-purple-900 text-white   "
+        className="flex flex-row gap-8 text-xl font-medium items-center justify-center 
+        w-full py-6  bg-gradient-to-br from-gray-800 to-purple-900 text-white   "
       >
-        <div className="hover:scale-110 duration-300">
+        <div className="hover:scale-110 duration-300 ">
           <a href="https://github.com/Mohit-Saini9">
-            <FaSquareGithub style={{ width: "30", height: "30" }} />
+            <FaSquareGithub className="text-3xl" />
             Github
           </a>
         </div>
         <div className="hover:scale-110 duration-300">
           <a href="mailto:mohit911545@gmail.com">
-            <MdEmail style={{ width: "30", height: "30" }} />
+            <MdEmail className="text-3xl" />
             Mail
           </a>
         </div>
         <div className="hover:scale-110 duration-300">
           <a href="https://www.linkedin.com/in/mohit-saini-713487283/">
-            <FaLinkedin style={{ width: "30", height: "30" }} />
+            <FaLinkedin className="text-3xl" />
             Linkdin
           </a>
         </div>

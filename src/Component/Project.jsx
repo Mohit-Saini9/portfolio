@@ -41,7 +41,7 @@ const Projects = () => {
   return (
     <div name="projects" className="w-full py-16">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-medium border-b-4 border-black inline-block">
+        <h2 className="text-3xl md:text-4xl font-medium border-b-4 border-black inline-block">
           Projects
         </h2>
 
@@ -59,7 +59,7 @@ const Projects = () => {
 
               <p className="text-sm text-gray-400 mt-2">{item.tech}</p>
 
-              <div className="mt-5 flex gap-4 justify-between text-center ">
+              <div className="mt-5 flex flex-col sm:flex-row gap-3 justify-between text-center ">
                 <a
                   href={item.github}
                   target="_blank"
