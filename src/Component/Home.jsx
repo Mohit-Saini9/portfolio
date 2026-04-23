@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="w-full max-w-6xl text-black flex justify-center mx-auto py-10"
+      className="w-full min-h-fit max-w-6xl text-black flex justify-center mx-auto py-10"
     >
       <div className="  grid grid-cols-1 md:grid-cols-2 items-center justify-between px-3 mx-auto w-full">
         <div className="px-3 mx-auto gap-10 ">
