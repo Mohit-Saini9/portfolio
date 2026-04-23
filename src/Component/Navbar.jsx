@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <div
       className="flex justify-between items-center  bg-gradient-to-tr from-gray-800 to-purple-900  z-20
-      w-full h-15 text-white fixed "
+      w-full h-16 text-white fixed "
     >
       <div>
         <h1 className="text-xl ml-2 font-signature">Mohit Saini</h1>
@@ -39,7 +39,7 @@ const Navbar = () => {
         onClick={() => setNav(!nav)}
         className="md:hidden  z-10 cursor-pointer mr-4 "
       >
-        {nav ? <FaTimes size={25} /> : <FaBars size={25} />}
+        {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
 
         {nav && (
           <ul

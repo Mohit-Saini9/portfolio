@@ -41,7 +41,7 @@ const Contact = () => {
               className="bg- p-2 border-2  border-black  rounded-md focus:outline-none"
             ></textarea>
             <button
-              className=" bg-gradient-to-tr from-gray-700 to-purple-800 hover:to-purple-900 mx-auto px-6 py-3 my-8 flex-items-center 
+              className=" bg-gradient-to-tr from-gray-700 to-purple-800 hover:to-purple-900 mx-auto  px-8 py-3 my-8 flex-items-center 
              rounded-md hover:scale-110 duration-300 text-white"
             >
               Let's talk

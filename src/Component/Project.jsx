@@ -25,7 +25,7 @@ const Projects = () => {
     },
     {
       title: "GitHub Profile Fetcher",
-      desc: "Fetch GitHub user data using API integration.",
+      desc: "Developed a responsive app to fetch and display GitHub user profiles and repositories using API integration.",
       tech: "React, API ,Tailwind css",
       github: "https://github.com/Mohit-Saini9/githubFetcher",
       live: "",
@@ -45,7 +45,7 @@ const Projects = () => {
           Projects
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8 px-2">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8 px-2 py-2">
           {projects.map((item, index) => (
             <div
               key={index}
@@ -59,12 +59,12 @@ const Projects = () => {
 
               <p className="text-sm text-gray-400 mt-2">{item.tech}</p>
 
-              <div className="mt-5 flex gap-3">
+              <div className="mt-5 flex gap-4 justify-between text-center ">
                 <a
                   href={item.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-2 text-sm font-medium rounded-lg 
+                  className="w-full py-2 text-sm font-medium rounded-lg 
     bg-gradient-to-l from-gray-800 to-purple-700 text-white 
     shadow-md hover:shadow-xl hover:scale-105 
     transition duration-300"
@@ -76,7 +76,7 @@ const Projects = () => {
                   href={item.live}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 text-sm font-medium rounded-lg 
+                  className="w-full py-2 text-sm font-medium rounded-lg 
     bg-gradient-to-r from-purple-800 to-gray-600 text-white 
     shadow-md hover:shadow-xl hover:scale-105 
     transition duration-300"
