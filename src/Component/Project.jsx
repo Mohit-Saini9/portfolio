@@ -5,7 +5,7 @@ const Projects = () => {
     {
       title: "Portfolio Website",
       desc: "Personal portfolio built using React.js and Tailwind CSS.",
-      tech: "React, Tailwind Css",
+      tech: "React js, Tailwind Css",
       github: "https://github.com/Mohit-Saini9/react-my-porfolio",
       live: "https://portfolio-teal-iota-85.vercel.app/",
     },
@@ -19,21 +19,21 @@ const Projects = () => {
     {
       title: "Learning Management System",
       desc: "Responsive LMS UI built using React.js.",
-      tech: "React, Tailwind",
+      tech: "React js, Tailwind css",
       github: "https://github.com/Mohit-Saini9/PskAcadmy",
       live: "https://psk-acadmy.vercel.app/",
     },
     {
       title: "GitHub Profile Fetcher",
       desc: "Developed a responsive app to fetch and display GitHub user profiles and repositories using API integration.",
-      tech: "React, API ,Tailwind css",
-      github: "https://github.com/Mohit-Saini9/githubFetcher",
+      tech: "React js, API ,Tailwind css",
+      github: "/",
       live: "",
     },
     {
       title: "Student Management System",
       desc: "CRUD app to manage student records with add, update, and delete functionality.",
-      tech: "React, Redux Toolkit, Tailwind CSS, API Integration",
+      tech: "React js, Redux Toolkit, Tailwind CSS, API Integration",
       github: "https://github.com/Mohit-Saini9/student-managment",
       live: "https://student-managment-bay.vercel.app/",
     },
@@ -45,19 +45,25 @@ const Projects = () => {
           Projects
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8 px-2 py-2">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 px-2 py-2">
           {projects.map((item, index) => (
             <div
               key={index}
               className="p-5 border rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition duration-300"
             >
               <h3 className="text-xl font-semibold text-purple-700">
-                {item.title}
+                Project Name :- {item.title}
               </h3>
 
-              <p className="text-gray-600 mt-2">{item.desc}</p>
+              <p className="text-gray-600 mt-2">
+                {" "}
+                <span className="font-bold">Description :-</span> {item.desc}
+              </p>
 
-              <p className="text-sm text-gray-400 mt-2">{item.tech}</p>
+              <p className="text-sm text-gray-400 mt-2">
+                <span className="font-bold text-black">Tech Stcak :-</span>
+                {item.tech}
+              </p>
 
               <div className="mt-5 flex flex-col sm:flex-row gap-3 justify-between text-center ">
                 <a
@@ -73,7 +79,7 @@ const Projects = () => {
                 </a>
 
                 <a
-                  href={item.live}
+                  href={item?.live}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full py-3 text-sm font-medium rounded-lg 
